@@ -10966,7 +10966,7 @@ START: Blog Details CSS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px dashed var(--tj-color-border-1);
+
   border-radius: 10px;
   margin-bottom: 25px;
 }

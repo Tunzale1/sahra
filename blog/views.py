@@ -14,5 +14,5 @@ def blog_list(request):
 def blog_detail(request, slug):
     blog = get_object_or_404(Blog, slug=slug)
     other_blogs = Blog.objects.exclude(slug=slug)[:6]
-    return render(request, 'blog-details.html', 'blog.html', {'blog': blog, 'other_blogs': other_blogs})
+    return render(request, 'blog-details.html', {'blog': blog, 'other_blogs': other_blogs})
 
