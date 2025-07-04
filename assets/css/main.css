@@ -1401,29 +1401,13 @@ START: Theme Footer CSS
   background-color: var(--tj-color-theme-bg);
   position: relative;
   z-index: 1;
-  padding-top: 195px;
   margin-bottom: 15px;
   border-radius: 12px;
   overflow: hidden;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .tj-footer-section {
-    padding-top: 150px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .tj-footer-section {
-    padding-top: 135px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .tj-footer-section {
-    padding-top: 320px;
-  }
-}
+
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-footer-section {
-    padding-top: 270px;
     margin-bottom: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -1967,7 +1951,6 @@ START: Theme Footer CSS
 
 .tj-footer-section.footer-2 {
   background-color: var(--tj-color-theme-dark);
-  padding-top: 100px;
 }
 .tj-footer-section.footer-2 .footer-widget .title {
   color: var(--tj-color-common-white);
