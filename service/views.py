@@ -7,4 +7,5 @@ def service_list(request):
 
 def service_detail(request, slug):
     service = get_object_or_404(Service, slug=slug)
-    return render(request, 'service-details.html', {'service': service})
+    other_services = Service.objects.exclude(slug=slug)[:6]
+    return render(request, 'service-details.html', {'service': service,  'other_services': other_services})
